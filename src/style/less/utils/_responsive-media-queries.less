@@ -1,0 +1,34 @@
+/* Responsive media queries:
+ ========================================================================== */
+@xs: 420px;
+@s: 576px;
+@m: 768px;
+@l: 992px;
+@xl: 1200px;
+@xxl: 1400px;
+
+
+@header-0-xs: 75px;
+@header-xs-s: 75px;
+@header-s-m: 83px;
+@header-m-l: 101px;
+@header-l-xl: 110px;
+@header-xl-xxl: 118px;
+
+.media-breakpoint-up(@start, @rules) {
+  @media screen and (min-width: @start) {
+    @rules();
+  }
+}
+
+.media-breakpoint-down(@end, @rules) {
+  @media screen and (max-width: calc(@end - 1px)) {
+    @rules();
+  }
+}
+
+.media-breakpoint-between(@start, @end, @rules) {
+  @media (min-width: @start) and (max-width: calc(@end - 1px)) {
+    @rules();
+  }
+}

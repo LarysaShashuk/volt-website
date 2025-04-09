@@ -1,0 +1,142 @@
+@import '../../style/less/index';
+
+.welcomeBanner {
+  width: 100vw;
+  height: 100vh;
+  min-height: 685px;
+  max-height: 985px;
+
+  background: linear-gradient(0deg, rgba(9, 32, 96, 0.5) 0%, rgba(9, 32, 96, 0.5) 100%), url('../../assets/img/resto2.webp') lightgray 50% / cover no-repeat;
+
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
+  .container-vertical {
+    max-width: 975px;
+    padding-top: @header-0-xs;
+    padding-bottom: 0;
+
+    .media-breakpoint-up(@xs,
+    {
+      padding-top: @header-xs-s;
+    });
+    .media-breakpoint-up(@s,
+    {
+      padding-top: @header-s-m;
+    });
+    .media-breakpoint-up(@m,
+    {
+      padding-top: @header-m-l;
+    });
+    .media-breakpoint-up(@l,
+    {
+      padding-top: @header-l-xl;
+    });
+    .media-breakpoint-up(@xl,
+    {
+      padding-top: @header-xl-xxl;
+    });
+  }
+
+  &__innerContainer {
+    width: 100%;
+    height: 100%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 70px;
+
+    .media-breakpoint-up(@s,
+    {
+      gap: 70px;
+    });
+
+    .media-breakpoint-up(@l,
+    {
+      gap: 100px;
+    });
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 18px;
+
+    .media-breakpoint-up(@s,
+    {
+      gap: 32px;
+    });
+
+    h2 {
+      color: #FFF;
+      font-family: @font-Bebas;
+
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 100%; /* 70px */
+      text-box-edge: cap alphabetic;
+      text-box-trim: trim-both;
+
+      .media-breakpoint-up(@s,
+      {
+        font-size: 60px;
+      });
+
+      .media-breakpoint-up(@m,
+      {
+        font-size: 65px;
+      });
+
+      .media-breakpoint-up(@l,
+      {
+        font-size: 80px;
+      });
+    }
+
+    h1 {
+      color: #FFF;
+      font-family: @font-Bebas;
+      font-size: 240px;
+      font-weight: 500;
+      line-height: 100%; /* 287px */
+      text-box-edge: cap alphabetic;
+      text-box-trim: trim-both;
+
+      .media-breakpoint-up(@s,
+      {
+        font-size: 300px;
+      });
+
+      .media-breakpoint-up(@m,
+      {
+        font-size: 350px;
+      });
+
+      .media-breakpoint-up(@l,
+      {
+        font-size: 370px;
+      });
+    }
+  }
+
+  &__buttons {
+    width: 100%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+
+    .media-breakpoint-up(@s,
+    {
+      flex-direction: row;
+      gap: 24px;
+    });
+  }
+}

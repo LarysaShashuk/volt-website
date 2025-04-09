@@ -1,0 +1,226 @@
+/* Reset:
+  ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+html,
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:focus {
+  outline: 0;
+}
+img,
+audio,
+video {
+  max-width: 100%;
+  height: auto;
+}
+iframe {
+  border: 0;
+}
+textarea {
+  resize: none;
+  /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+  border: none;
+  font-size: 100%;
+  margin: 0;
+}
+button,
+input {
+  line-height: normal;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #000000;
+  transition: background-color 5000s ease-in-out 0s;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+/* Responsive media queries:
+ ========================================================================== */
+@font-face {
+  font-family: "Roboto700";
+  /*Can be any text*/
+  src: local("Roboto-Bold"), url("/public/fonts/Roboto/static/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto500";
+  /*Can be any text*/
+  src: local("Roboto-Medium"), url("/public/fonts/Roboto/static/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto400";
+  /*Can be any text*/
+  src: local("Roboto-Regular"), url("/public/fonts/Roboto/static/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto300";
+  /*Can be any text*/
+  src: local("Roboto-Light"), url("/public/fonts/Roboto/static/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto200";
+  /*Can be any text*/
+  src: local("Roboto-Thin"), url("/public/fonts/Roboto/static/Roboto-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BebasNeue";
+  /*Can be any text*/
+  src: local("BebasNeue-Regular"), url("/public/fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+}
+html {
+  background-color: #0B1A3F;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0B1A3F;
+}
+body * {
+  font-family: Roboto400, sans-serif;
+}
+.container {
+  width: 90%;
+  padding: 40px 0;
+  max-width: 1120px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 80px 0;
+  }
+}
+.container-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.container-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+@media screen and (min-width: 992px) {
+  .container-vertical {
+    gap: 56px;
+  }
+}
+.sectionCommon {
+  width: 100vw;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.sectionSubtitle {
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto200, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .sectionSubtitle {
+    font-size: 24px;
+  }
+}
+.linkButton {
+  display: flex;
+  width: 100%;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #FFF;
+  font-family: BebasNeue, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 6px;
+  border: 1px solid #FFF;
+  box-shadow: 0px 0px 0px 3px #0975E8;
+}
+@media screen and (min-width: 576px) {
+  .linkButton {
+    width: 290px;
+    padding: 18px;
+    font-size: 24px;
+  }
+}
+.linkButton.primary {
+  background: rgba(0, 73, 152, 0.5);
+}
+.linkButton.primary:hover {
+  background: rgba(0, 73, 152, 0.75);
+}
+.linkButton.secondary {
+  background: rgba(11, 26, 63, 0.75);
+}
+.linkButton.secondary:hover {
+  background: rgba(27, 45, 91, 0.75);
+}
+/*# sourceMappingURL=index.css.map */
