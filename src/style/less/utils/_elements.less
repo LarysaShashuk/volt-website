@@ -55,6 +55,32 @@ body {
   justify-content: center;
 }
 
+.sectionTitle {
+  color: #FFF;
+  font-family: @font-Bebas;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 91px */
+  text-box-edge: cap alphabetic;
+  text-box-trim: trim-both;
+
+  .media-breakpoint-up(@s,
+  {
+    font-size: 60px;
+  });
+
+  .media-breakpoint-up(@m,
+  {
+    font-size: 65px;
+  });
+
+  .media-breakpoint-up(@l,
+  {
+    font-size: 90px;
+  });
+}
+
 .sectionSubtitle {
   color: #FFF;
   text-align: center;

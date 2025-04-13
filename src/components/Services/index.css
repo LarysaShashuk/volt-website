@@ -213,40 +213,159 @@ body * {
     font-size: 24px;
   }
 }
-.linkButton {
+.servicesSection {
+  width: 100vw;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(9, 32, 96, 0.5) 0%, rgba(9, 32, 96, 0.5) 100%), url('../../assets/img/resto2.webp') lightgray 50% / cover no-repeat;
+}
+.servicesSection h2 {
+  color: #FFF;
+  font-family: BebasNeue, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 91px */
+  text-box-edge: cap alphabetic;
+  text-box-trim: trim-both;
+}
+@media screen and (min-width: 576px) {
+  .servicesSection h2 {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .servicesSection h2 {
+    font-size: 65px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .servicesSection h2 {
+    font-size: 90px;
+  }
+}
+.servicesSection__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.servicesSection__content__item {
   display: flex;
   width: 100%;
-  padding: 12px;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .servicesSection__content__item {
+    width: 49%;
+  }
+}
+.servicesSection__content__item__illustration {
+  display: flex;
+  width: 80px;
+  height: 80px;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  color: #FFF;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  border-radius: 100px;
+  border: 7px solid #0B1A3F;
+  background: #FFF;
+  z-index: 1;
+}
+.servicesSection__content__item__illustration svg {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+.servicesSection__content__item__illustration svg path {
+  fill: #0B1A3F;
+}
+@media screen and (min-width: 576px) {
+  .servicesSection__content__item__illustration {
+    width: 90px;
+    height: 90px;
+  }
+  .servicesSection__content__item__illustration svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .servicesSection__content__item__illustration {
+    width: 115px;
+    height: 115px;
+  }
+  .servicesSection__content__item__illustration svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+.servicesSection__content__item__text {
+  height: 100%;
+  margin-left: -32px;
+  display: flex;
+  padding: 12px 12px 12px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1 0 0;
+  background: #FFF;
+}
+@media screen and (min-width: 768px) {
+  .servicesSection__content__item__text {
+    padding: 12px 24px 12px 50px;
+  }
+}
+.servicesSection__content__item__text h4 {
+  color: #0B1A3F;
   font-family: BebasNeue, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  border-radius: 6px;
-  border: 1px solid #FFF;
-  box-shadow: 0px 0px 0px 3px #0975E8;
 }
-@media screen and (min-width: 576px) {
-  .linkButton {
-    width: 290px;
-    padding: 18px;
+@media screen and (min-width: 768px) {
+  .servicesSection__content__item__text h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .servicesSection__content__item__text h4 {
     font-size: 24px;
   }
 }
-.linkButton.primary {
-  background: rgba(0, 73, 152, 0.5);
+.servicesSection__content__item__text p {
+  color: #0B1A3F;
+  font-family: Roboto300, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 140%;
+  /* 22.4px */
 }
-.linkButton.primary:hover {
-  background: rgba(0, 73, 152, 0.75);
+@media screen and (min-width: 992px) {
+  .servicesSection__content__item__text p {
+    font-size: 16px;
+  }
 }
-.linkButton.secondary {
-  background: rgba(11, 26, 63, 0.75);
-}
-.linkButton.secondary:hover {
-  background: rgba(27, 45, 91, 0.75);
+@media screen and (min-width: 768px) {
+  .servicesSection__content__item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .servicesSection__content__item:nth-child(even) .servicesSection__content__item__text {
+    margin-left: 0;
+    margin-right: -32px;
+    padding: 12px 50px 12px 24px;
+    align-items: flex-end;
+  }
+  .servicesSection__content__item:nth-child(even) .servicesSection__content__item__text h4,
+  .servicesSection__content__item:nth-child(even) .servicesSection__content__item__text p {
+    text-align: right;
+  }
 }
 /*# sourceMappingURL=index.css.map */
